@@ -67,3 +67,54 @@ header{
 .banner>.banner-view{
     width: 100%;
 }
+
+/* Feature Section Styles */
+.features{
+    padding: 0 300px;
+    display: flex;
+    margin: 130px auto;
+    align-items: center;
+    justify-content: space-between;
+    gap: 73px;
+}
+.team-images{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+}
+.team-images img{
+    width: 340px;
+    height: 340px;
+}
+
+.feature-about>.feature-title{
+    font-size: 45px;
+
+}
+.feature-about>.gray-2{
+    font-weight: 600;
+}
+.feature-about>.black-gray, .orange-text{
+    font-weight: 700;
+}
+/* Responsive Section and Elements */
+@media  screen and (max-width:576px),(max-width:768px) {
+    header{
+        padding: 0;
+    }
+    .navbar,
+    .menu-list{
+        flex-direction: column;
+    }
+    
+}
+@media screen and (max-width:992px) {
+    header{
+        padding:0 30px;
+    }
+}
+@media  screen and (min-width:992px) and (max-width:1200px) {
+    header{
+        padding:0 100px;
+    }
+}
